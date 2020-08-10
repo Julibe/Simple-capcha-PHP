@@ -102,14 +102,15 @@
 
 		
 	/* Close the buffer */
-
 	$buffer = ob_get_clean();
 	
-	/* Show the code as an image */
+	/* set the file as imf */
 	header('Content-type: image/png');
 
 	/* Add the string to the session */
 
 	$_SESSION['captcha_text'] = $captcha_string;
+
+	/* show the code */
 	echo( $buffer );
 ?>
