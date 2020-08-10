@@ -99,7 +99,6 @@
 		/* Create the image and delete it */
 		imagepng($image);
 		imagedestroy($image);
-
 		
 	/* Close the buffer */
 	$buffer = ob_get_clean();
